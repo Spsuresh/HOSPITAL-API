@@ -13,7 +13,7 @@ const router = express.Router();
 
 router.post("/doctors/register", registerDoctor);
 
-router.post("/login", login)
+router.post("/login", login);
 
 router.post("/patients/register",passport.authenticate("jwt",{session: false}), registerPatient);
 

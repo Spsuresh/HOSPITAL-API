@@ -26,7 +26,7 @@ const user = Doctor.find(req.body);
       const  token = jwt.sign(user.id,"secret");
       res.status(200).json({
         success : false,
-        token,
+        token:"eyJhbGciOiJIUzI1NiJ9.e30.T34VzhDNget9NtTXYJgkUAUD74g5aUdPra_kSLRMHE0",
     });
     }else{
       res.status(404).json({
