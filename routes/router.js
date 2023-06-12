@@ -15,17 +15,10 @@ router.post("/doctors/register", registerDoctor);
 
 router.post("/login", login)
 
-router.post(
-  "/patients/register",
-  passport.authenticate("jwt", { session: false }),
-  registerPatient
-);
+router.post("/patients/register",registerPatient);
 
 router.post(
-  "/patients/:id/create_report",
-  passport.authenticate("jwt", { session: false }),
-  createReport
-);
+  "/patients/:id/create_report", createReport);
 
 router.get("/patients/:id/all_report", all_reports);
 

@@ -45,7 +45,7 @@ const user = Doctor.find(req.body);
 
 module.exports.registerPatient = async (req,res,next) => {
   try {
-    req.body.doctor = "648356be8d6a934e94bc8b93";
+    req.body.doctor = "6486eaf02109945584049e43";
     const patient = await Patient.create(req.body);
 
     res.status(200).json({
